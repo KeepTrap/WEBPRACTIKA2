@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Caveat", cursive;
+}
+
+.main-wrapper {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1170px;
+}
+
+header {
+  background-color: rgb(33, 42, 73);
+  height: 70px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header > .main-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.main-menu {
+  margin-left: auto;
+}
+
+.main-menu > ul > li {
+  display: inline-block;
+  font-size: 25px;
+  letter-spacing: 1px;
+  color: rgb(68, 247, 77);
+  margin-right: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.main-menu > ul > li > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-menu > ul > li:last-child {
+  margin-right: 0;
+}
+
+a {
+  opacity: 0.5;
+  transition: all 0.3s linear;
+}
+
+a:hover {
+  opacity: 1;
+  transition: all 0.2s linear;
+}
+
+.main-board {
+  background: url(img/oboi.jpg) no-repeat fixed;
+  background-position: 50% -50px;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+}
+
+.main-board::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(33, 42, 73, 0.6);
+  z-index: 1;
+}
+
+.main-board > .main-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.main-board-left-block {
+  width: 50%;
+}
+
+.main-board-image {
+  margin: auto;
+}
+
+.main-board h1 {
+  color: #ffffff;
+  padding: 25px 0 0 30px;
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.main-board-left-block > div:first-of-type {
+  color: #ffffff;
+  font-size: 26px;
+  margin-bottom: 45px;
+}
+
+.main-board-left-block > div:last-of-type {
+  display: flex;
+}
+
+.main-board-button-link {
+  margin-right: 20px;
+}
+
+.main-board-button-link {
+  display: flex;
+  align-items: center;
+  width: 180px;
+  height: 80px;
+  border: 3px solid rgb(68, 247, 77);
+  font-size: 18px;
+  border-radius: 0 15px 0 15px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  transition-duration: 0.3s;
+}
+
+.main-board-button-link > i {
+  margin-left: 20px;
+  margin-right: 15px;
+  font-size: 30px;
+  color: rgb(68, 247, 77);
+  width: 26px;
+  transition-duration: 0.3s;
+}
+
+.main-board-button-link_bold {
+  font-size: 26px;
+}
+
+.main-board-button-link:hover {
+  background: rgb(68, 247, 77);
+}
+
+.main-board-button-link:hover > i {
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 60px;
+}
+
+h2 {
+  font-size: 50px;
+  line-height: 40px;
+  color: rgb(68, 247, 77);
+  text-align: center;
+  padding: 48px;
+}
+
+h2 > span {
+  position: relative;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+.trailer {
+  background: rgb(33, 42, 73);
+  padding: 20px;
+}
+
+video {
+  padding: 5px;
+}
+
+.character {
+  padding: 20px;
+  background: url(img/obou.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.character-container {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.character-container-item {
+  flex: 0 0 255px;
+  display: flex;
+  flex-direction: column;
+}
+
+.character-container-item-footer {
+  background-color: rgb(33, 42, 73);
+  border-radius: 10px;
+  box-shadow: 4px 4px 18px 0px rgb(44, 44, 75);
+  padding: 10px;
+  width: 200px;
+  height: 100px;
+}
+
+.character-container-item-footer > span .character-container-item-footer > h3 {
+  display: block;
+}
+
+.character-container-item-footer > h3 {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.character-container-item-footer > span {
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.character-container-item > figure {
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+  padding-right: 55px;
+}
+
+.character-container-item > figure > figcaption {
+  position: absolute;
+  left: 0;
+  right: 55px;
+  top: 0;
+  bottom: 0;
+  background: rgba(22, 28, 53, 0);
+  display: flex;
+  justify-content: center;
+  transition-duration: 0.1s;
+}
+
+.character-container-item > figure > figcaption > a {
+  text-decoration: none;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ffffff;
+  border-radius: 40px;
+  margin: 10px;
+  margin-top: auto;
+  margin-bottom: 20px;
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  transition-duration: 0.5s;
+}
+
+.character-container-item > figure > figcaption > a:nth-child(1) {
+  transform: translateY(50px);
+}
+
+.character-container-item > figure > figcaption > a:hover {
+  color: rgb(68, 247, 77);
+  background: #fff;
+}
+
+.character-container-item > figure > img {
+  transition-duration: 1s;
+}
+
+.character-container-item > figure:hover > img {
+  transform: scale3d(1.1, 1.1, 1);
+}
+
+.character-container-item > figure:hover > figcaption > a {
+  transform: translateY(0px);
+}
+
+.about-game {
+  background: rgb(33, 42, 73);
+  padding-top: 20px;
+}
+
+.about-container {
+  color: #ffffff;
+  padding-bottom: 70px;
+}
+
+.about-container > h3 {
+  padding-bottom: 20px;
+  font-size: 40px;
+}
+
+p {
+  font-size: 25px;
+}
+
+.contacts {
+  background: url(img/oboq.jpg);
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+
+.contacts-container {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts-container > h3 {
+  font-size: 30px;
+}
+
+.contacts-container > h3 > p {
+  font-size: 25px;
+  color: rgb(68, 247, 77);
+  padding-bottom: 50px;
+}
+
+#img-contacts {
+  width: 400px;
+  height: 450px;
+  background-image: url(img/end.png);
+  background-size: auto;
+  position: relative;
+  left: 380px;
+}
+
+#img-contacts:active {
+  animation: MikuMov 2s infinite;
+}
+
+@keyframes MikuMov {
+  0% {
+    left: 380px;
+  }
+  25% {
+    left: -100px;
+    transform: rotate(180deg);
+  }
+  50% {
+    left: 600px;
+    transform: rotate(360deg);
+  }
+  75% {
+    left: 800px;
+    transform: rotate(-180deg);
+  }
+  100% {
+    left: 380px;
+    transform: rotate(-360deg);
+  }
+}
+
+
+@media screen and (min-width: 600px) {
+  .hereIsMyClass {
+    width: 30%;
+    float: right;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .aClassforSmallScreens {
+    clear: both;
+    font-size: 1.3em;
+  }
+}
