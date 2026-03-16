@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Портфолио</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">О себе</a></li>
+                    <li><a href="projects.html">Проекты</a></li>
+                    <li><a href="contact.html" class="active">Контакты</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle">Тёмная тема</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact">
+            <h1>Контакты</h1>
+
+            <div class="contact-container">
+                <div class="contact-form">
+                    <h2>Форма обратной связи</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Ваше имя:</label>
+                            <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Ваш Email:</label>
+                            <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Сообщение:</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Введите ваше сообщение..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Отправить сообщение</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h2>Контактная информация</h2>
+                    <p><strong>Email:</strong> <a href="mailto:alex.dev@example.com">tokarme9@gmai.com</a></p>
+
+                    <h2>Социальные сети и профили</h2>
+                    <ul class="social-links">
+                        <li><a href="#" target="_blank">📱 Telegram</a></li>
+                        <li><a href="#" target="_blank">📷 Instagram</a></li>
+                        <li><a href="#" target="_blank">🐙 GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 arlanco. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
